@@ -1,3 +1,4 @@
+# Implementation of client
 import socket
 
 HEADER = 64
