@@ -2,7 +2,7 @@
 import socket
 
 HEADER = 64
-PORT = 5050
+PORT = 5050 
 FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = "!DISCONNECT"
 SERVER = "192.168.1.26"
@@ -20,10 +20,10 @@ def send(msg):
     client.send(message)
     print(client.recv(2048).decode(FORMAT))
 
-send("Hello World!")
+send("Server is upto...")
 input()
-send("Hello Everyone!")
+send("Fetching data from the server!")
 input()
-send("Hello Aashish!")
+send("Running...")
 
 send(DISCONNECT_MESSAGE)
